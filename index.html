@@ -1301,6 +1301,17 @@
         document.getElementById('eqFile').addEventListener('change', function (e) {
             const file = e.target.files[0];
             if (!file) return;
+            const fileName = file.name.toLowerCase();
+
+if (
+    !fileName.endsWith('.dat')
+) {
+    const status = document.getElementById('status');
+    status.className = 'status error';
+    status.textContent = '❌ Please select a .dat file.';
+    status.classList.remove('hidden');
+    return;
+}
             const reader = new FileReader();
             reader.onload = function (ev) {
                 try {
