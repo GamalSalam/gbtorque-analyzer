@@ -3180,5 +3180,16 @@
             updateHeaderState();
         })();
     </script>
+    <script>
+        // Register service worker for offline support + auto-update.
+        // Uses a relative path so it works both at the repo root and if
+        // ever served from a sub-path (matches manifest's "./" scope).
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .catch((err) => console.warn('SW registration failed:', err));
+            });
+        }
+    </script>
 </body>
 </html>
