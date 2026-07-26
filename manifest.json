@@ -1,23 +1,16 @@
 {
-  "name": "GB Torque Analyzer",
+  "name": "Gearbox Torque Analyzer",
   "short_name": "GB Torque",
-  "description": "Gearbox Torque Analyzer for Sucker Rod Surface Units",
-  "start_url": "./",
+  "start_url": "./GearBalanceAnalyzer.html",
   "scope": "./",
   "display": "standalone",
-  "orientation": "portrait",
   "background_color": "#1a1a2e",
   "theme_color": "#00d4ff",
+  "orientation": "any",
   "icons": [
-    {
-      "src": "icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
+    { "src": "src/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "src/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "src/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "src/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
   ]
 }
