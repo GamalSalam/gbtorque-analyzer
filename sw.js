@@ -20,7 +20,7 @@ const CACHE_NAME = 'gbtorque-cache-' + CACHE_VERSION;
 
 // Must ALL exist -- cache.addAll() fails entirely if even one 404s.
 const CORE_SHELL = [
-    './GearBalanceAnalyzer.html',
+    './index.html',
     './manifest.json',
     './src/favicon.png',
     './src/header-logo.png',
