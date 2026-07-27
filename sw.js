@@ -84,7 +84,7 @@ self.addEventListener('fetch', (event) => {
                 return fresh;
             } catch (e) {
                 const cached = await caches.match(req);
-                return cached || caches.match('./GearBalanceAnalyzer.html');
+                return cached || caches.match('./index.html');
             }
         })());
     } else {
