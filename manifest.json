@@ -1,7 +1,7 @@
 {
   "name": "Gearbox Torque Analyzer",
   "short_name": "GB Torque",
-  "start_url": "./GearBalanceAnalyzer.html",
+  "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "background_color": "#1a1a2e",
